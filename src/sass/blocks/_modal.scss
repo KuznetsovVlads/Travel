@@ -1,0 +1,130 @@
+.modal {
+    margin: 30px auto;
+    width: 650px;
+    display: flex;
+    padding: 0 45px;
+    flex-direction: column;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    text-align: center;
+    &__subtitle {
+        margin: 25px 0 10px;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: #0D606F;
+    }
+    &__input {
+        position: relative;
+    }
+    &__form {
+        
+        & input {
+            
+            margin-top: 44px;
+            width: 100%;
+            height: 54px;
+            box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+            border-radius: 10px;
+            border:none;
+        }    
+        & label{
+            position: absolute;
+            top: 17px;
+            left: 0;
+            z-index: 4;
+            font-family: 'Aleo';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #0D606F;
+        }
+        
+    }
+    &__button {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 54px;
+    }
+    & p {
+        margin-top: 20px;
+        
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: rgba(13, 96, 111, 0.5);
+    }
+    & a{
+        
+        font-family: 'Aleo';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        color: #0D606F;
+
+    }
+    
+    &__or {
+        position: relative;
+        padding: 0 8px;
+        &::before {
+            content: "";
+            width: 47%;
+            height: 1px;
+            position: absolute;
+            top: 12px;
+            left: 0;
+            background-color: rgba(13, 96, 111, 0.5);
+        }
+        &::after {
+            content: "";
+            width: 47%;
+            height: 1px;
+            position: absolute;
+            top: 12px;
+            right: 0;
+            background-color: rgba(13, 96, 111, 0.5);
+        }
+        & p{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.facebook {
+    background: #1877F2;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    & img {
+        margin-right: 15px;
+    }
+}
+.google {
+    background: #FFFFFF;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D606F;
+    & img {
+        margin-right: 15px;
+    }
+}
+
+.divider {
+    margin-top: 26px;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(13, 96, 111, 0.5);
+}

@@ -1,0 +1,35 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:wght@500&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+* {
+    font-family: 'Aleo', serif;
+    font-family: 'Red Hat Text', sans-serif;
+    padding: 0;
+    box-sizing:border-box
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.title {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    text-align: center;
+}
+
+
+
+@import './blocks/preview';
+@import './blocks/buttons';
+@import './blocks/steps';
+@import './blocks/destination';
+@import './blocks/stories';
+@import './blocks/burger';
+@import './blocks/modal';

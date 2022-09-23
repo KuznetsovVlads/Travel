@@ -1,0 +1,75 @@
+.destination{
+    height: 1042px;
+    &__slider {
+        overflow: hidden;
+        margin-top: 45px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        gap: 60px;
+        
+    }
+    &__mySlides {
+        position: relative;
+      & img {
+          border-radius: 16px;
+          width: 800px;
+      }
+    }
+    &__text {
+        position: absolute;
+        bottom:40px;
+        left: 15px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 42px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+
+      }
+    &__dots {
+        margin-top: 25px;
+        text-align:center;
+        & .dot {
+            cursor: pointer;
+            height: 20px;
+            width: 20px;
+            margin: 0 5px;
+            background-color: rgba(242, 120, 92, 0.5);
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+    }
+    &__btn {
+        margin: 40px auto;
+        display: block;
+        align-items: center;
+        align-content: space-between;
+        height: 59px;
+        font-size: 24px;
+        line-height: 32px;
+        & img{
+            margin-right: 10px;
+        }
+        
+    }
+}
+.active, .dot:hover {
+  background-color: #F2785C;
+}
+
+  
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

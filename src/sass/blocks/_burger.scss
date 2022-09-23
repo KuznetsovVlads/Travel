@@ -1,0 +1,39 @@
+.burger {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 44px 15px 30px 44px;
+    width: 165px;
+    height: 250px;
+    background: #F2785C;
+    box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+    border-radius: 10px;
+    
+    &__btn-close {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        
+    }
+
+
+    &__list {
+        list-style-type: none;
+        & li {
+            margin-bottom: 9px;
+            text-align: end;
+        }
+        & a {
+            
+            font-family: 'Red Hat Text';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+            
+
+            color: #FFFFFF;
+
+        }
+    }
+}

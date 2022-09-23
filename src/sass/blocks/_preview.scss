@@ -1,0 +1,102 @@
+.header {
+    background: rgba(242, 120, 92, 0.7);
+    background-size: 90px 100%;
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+.preview {
+    background: url(../img/bg/bg1.jpg) no-repeat 50%;
+    background-size: cover;
+    min-height: 765px;
+    margin: 0 auto;
+    
+    &__logo {
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        color: #FFFFFF;
+        gap: 6px;
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        gap: 42px;
+        & a{
+            font-family: 'Red Hat Text';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+            color: #FFFFFF;
+        }
+    }
+    &__button {
+        height: 41px;
+        align-items: center;
+    }
+    &__wrapper {
+        margin-top: 32px;
+        width: 892px;
+        height: 422px;
+    }
+    &__title {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 96px;
+        color: #FFFFFF;
+    }
+    &__subtitle {
+        font-family: 'Aleo';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    &__search {
+        margin-top: 46px;
+        position: relative;
+        
+        &_input {
+            height: 95px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 16px;
+            border: none;
+            padding-left: 41px;
+            padding-right: 291px;
+            font-family: 'Aleo';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;          
+            &::placeholder{
+                color: #F2785C;
+            }
+        }
+        &_btn {
+            position: absolute;
+            right: 18px;
+            top: 18px;
+            height: 59px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    
+    }
+}
+
+
